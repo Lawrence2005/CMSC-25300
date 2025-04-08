@@ -65,11 +65,11 @@ y = data['y']
 N = x1.size
 p = np.zeros((3, N))
 for d in [1 ,2 ,3]:
-    # Generate the X matrix for this d
-    # Note that here d is the degree of the polynomial , not the dimension of a vector
-    # Find the least - squares weight matrix w_d
-    # Evaluate the best -fit polynomial at each point(x1 ,x2)
-    # and store the result in the corresponding column of p
+    # Generate the X matrix for this d, d = degree of the polynomial
+    # Find the least-squares weight matrix w_d
+    
+    # Evaluate the best-fit polynomial at each point(x1 ,x2) and store the result in the corresponding column of p
+
     # Report the relative error of the polynomial fit
     rel_err = np.linalg.norm(y - <predicted values >) / np.linalg.norm(y )
     print(f"d={d}:␣ relative ␣ error ␣=␣{ rel_err *100:.3 f}%")
